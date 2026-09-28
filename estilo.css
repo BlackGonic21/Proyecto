@@ -1,0 +1,116 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+
+    /* Fondo galaxia */
+    background:
+        radial-gradient(circle at 20% 20%, #6a0dad 0%, transparent 30%),
+        radial-gradient(circle at 80% 80%, #8e24aa 0%, transparent 30%),
+        linear-gradient(135deg, #090014, #1a0633, #0d001a);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Formulario */
+.contenedor {
+    width: 380px;
+    padding: 35px;
+
+    background: rgba(25, 10, 45, 0.9);
+
+    border: 1px solid #9c27b0;
+    border-radius: 15px;
+
+    box-shadow:
+        0 0 15px #7b1fa2,
+        0 0 40px rgba(156, 39, 176, 0.4);
+}
+
+/* Título */
+h2 {
+    text-align: center;
+    color: #e1bee7;
+    margin-bottom: 30px;
+
+    text-shadow:
+        0 0 5px #ba68c8,
+        0 0 15px #9c27b0;
+}
+
+/* Etiquetas */
+label {
+    display: block;
+    color: #ce93d8;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Campos */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+
+    background-color: #12051f;
+    color: white;
+
+    border: 1px solid #7b1fa2;
+    border-radius: 8px;
+
+    outline: none;
+}
+
+input::placeholder {
+    color: #9575a8;
+}
+
+input:focus {
+    border-color: #ce93d8;
+
+    box-shadow:
+        0 0 8px #9c27b0;
+}
+
+/* Botón */
+button {
+    width: 100%;
+    padding: 12px;
+
+    background: linear-gradient(
+        90deg,
+        #6a1b9a,
+        #9c27b0,
+        #7b1fa2
+    );
+
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    box-shadow: 0 0 10px rgba(156, 39, 176, 0.7);
+
+    transition: 0.3s;
+}
+
+/* Efecto al pasar el mouse */
+button:hover {
+    transform: scale(1.03);
+
+    box-shadow:
+        0 0 15px #ba68c8,
+        0 0 30px #9c27b0;
+}
+
